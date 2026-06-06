@@ -1,0 +1,445 @@
+/**************** FORSIDE ***************/
+
+.forside h1 {
+  font-size: var(--font-size-mobil-h1);
+  justify-self: center;
+  margin-block: var(--margin-block-h1);
+}
+
+.forside img {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+.forside h2 {
+  font-size: var(--font-size-mobil-h2);
+  margin-block: var(--margin-block-mobil-h2);
+}
+
+.forside p {
+  max-width: 20ch;
+}
+
+.forside_portfolio {
+  margin-left: 140px;
+}
+
+#forside_projekter {
+  font-size: var(--font-size-mobil-h2);
+  margin-block: var(--margin-block-mobil-h2);
+  margin-left: 110px;
+}
+
+/* img, h2 */
+.grid_1-1-1 {
+  margin-block: 50px;
+}
+
+.grid_1-1-1 img {
+  width: 350px;
+  height: auto;
+  opacity: 0.3;
+  border: 1px solid var(--color-h1-h2);
+}
+
+.grid_1-1-1 h2 {
+  font-weight: 600;
+}
+
+.geometrisk_form {
+  width: 60px;
+  justify-self: right;
+  margin-right: 100px;
+}
+
+.trekant {
+  margin-top: var(--margin-top-trekant);
+}
+
+/**************** OM MIG ***************/
+
+.om_mig {
+  margin-inline: var(--margin-inline-mobil);
+  margin-bottom: 40px;
+}
+
+.om_mig h1 {
+  font-size: var(--font-size-mobil-h1);
+  margin-block: 40px 10px;
+}
+
+.portraet {
+  width: 400px;
+  height: auto;
+  justify-self: center;
+  margin-bottom: 80px;
+}
+
+.udvikling_kompetencer {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.udvikling_kompetencer p {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.udvikling_kompetencer h2 {
+  font-size: var(--font-size-mobil-h2);
+  margin-block: var(--margin-block-mobil-h2);
+}
+
+.udvikling_kompetencer > p {
+  margin-bottom: 60px;
+}
+
+/* 70% - 100% */
+.kompetence_bar_figma {
+  background: linear-gradient(to right, var(--color-rectangle) 70%, transparent 70%);
+  border: 1px solid var(--color-h1-h2);
+  height: 15px;
+  align-self: center;
+}
+
+.kompetence_bar_kodning {
+  background: linear-gradient(to right, var(--color-rectangle) 50%, transparent 50%);
+  border: 1px solid var(--color-h1-h2);
+  height: 15px;
+  align-self: center;
+}
+
+.kompetence_bar_illustrator {
+  background: linear-gradient(to right, var(--color-rectangle) 50%, transparent 50%);
+  border: 1px solid var(--color-h1-h2);
+  height: 15px;
+  align-self: center;
+}
+
+.kompetence_bar_premiere {
+  background: linear-gradient(to right, var(--color-rectangle) 40%, transparent 40%);
+  border: 1px solid var(--color-h1-h2);
+  height: 15px;
+  align-self: center;
+}
+
+.grid_1-3 {
+  margin-bottom: 40px;
+}
+
+.grid_1-3 p {
+  align-self: center;
+}
+
+.uddannelse_erfaring {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.uddannelse_erfaring p {
+  margin-inline: var(--margin-inline-mobil);
+  margin-block: 20px;
+}
+
+/**************** PROJEKTER ***************/
+
+.projekter {
+  font-size: var(--font-size-mobil-h1);
+  margin-inline: var(--margin-inline-mobil);
+}
+
+/**************** TEMA 2 ***************/
+
+.tema_2-5 h1 {
+  font-size: var(--font-size-mobil-h1);
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.tema_2-5 h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.tema_2-5 p {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.grey_line {
+  background: var(--color-line);
+  height: 1px;
+  width: 100%;
+  align-self: center;
+  margin-block: var(--margin-block-mobil-h2);
+}
+
+.tema_subheader h2 {
+  font-size: var(--font-size-mobil-h2);
+  margin-left: var(--margin-left-mobil-tema-h2);
+  padding-right: 6px;
+  margin-block: var(--margin-block-mobil-h2);
+}
+
+.tema_proces p,
+img {
+  margin-inline: var(--margin-inline-mobil);
+  margin-bottom: 30px;
+}
+
+.tema_loesning p,
+img {
+  margin-inline: var(--margin-inline-mobil);
+  margin-bottom: 30px;
+}
+
+.tema_2-5_reflektioner h2 {
+  margin-block: var(--margin-block-mobil-h2-reflektioner);
+}
+
+.tema_2-5_reflektioner p,
+img {
+  margin-inline: var(--margin-inline-mobil);
+  margin-bottom: 30px;
+}
+
+.link {
+  font-size: var(--font-size-mobil-link);
+  border-bottom: 1px solid var(--color-link-line);
+}
+
+.link_og_pil p {
+  margin-top: var(--margin-top-link);
+  font-size: var(--font-size-mobil-link);
+  border-bottom: 1px solid var(--color-link-line);
+  text-align: center;
+}
+
+.link_og_pil {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+/**************** TEMA 3 ***************/
+
+.proces_midt_cirkel {
+  margin-block: 50px;
+}
+
+/**************** TEMA 5 ***************/
+
+.video {
+  margin-inline: var(--margin-inline-mobil);
+}
+
+/* aspect-ratio > height:auto */
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+/**************** DESKTOP ***************/
+
+@media (min-width: 1000px) {
+  .video iframe {
+    width: 420px;
+  }
+
+  .video {
+    margin-bottom: 30px;
+  }
+  /**************** FORSIDE ***************/
+
+  .header_forside {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: var(--font-size-desktop-h2);
+  }
+
+  .tema_subheader h2 {
+    font-size: var(--font-size-desktop-h2);
+  }
+
+  .forside {
+    margin-inline: 30px;
+  }
+
+  .forside h1 {
+    font-size: 6rem;
+    margin-top: 0;
+  }
+
+  .forside img {
+    width: 500px;
+    height: auto;
+  }
+
+  .forside h2 {
+    font-size: var(--font-size-desktop-h2);
+    margin-top: 0;
+  }
+
+  .trekant {
+    width: 70px;
+    justify-self: left;
+    margin-left: 235px;
+    z-index: 1000;
+  }
+
+  #forside_projekter {
+    font-size: var(--font-size-desktop-h2);
+  }
+
+  .forside_temaer {
+    margin-inline: 400px 50px;
+  }
+
+  .forside_temaer img {
+    align-self: stretch;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .forside_temaer a {
+    margin-block: 0;
+  }
+
+  .grid_1-1-1 {
+    margin-block: 0;
+  }
+
+  /**************** PROJEKTER ***************/
+
+  .projekter {
+    font-size: var(--font-size-desktop-h1);
+  }
+
+  /**************** TEMA 2 ***************/
+
+  .tema_2-5 {
+    width: fit-content;
+  }
+
+  .tema_2-5 h1 {
+    font-size: var(--font-size-desktop-h1);
+    writing-mode: sideways-lr;
+  }
+
+  .tema_2-5 p {
+    margin-inline: 0;
+  }
+
+  .trekant_tema {
+    margin-left: 290px;
+    margin-top: 20px;
+  }
+
+  .grid_tema_2-5,
+  .tema_subheader,
+  .grid_tema_2-5_loesning {
+    margin-inline: var(--margin-inline-desktop-tema-text);
+  }
+
+  .tema_subheader {
+    margin-block: var(--margin-block-desktop-h2);
+  }
+
+  .grid_tema_2-5 img {
+    margin-inline: 0;
+  }
+
+  .grid_tema_2-5_loesning img {
+    margin-inline: 0;
+    max-width: 450px;
+  }
+
+  .circle_loesning {
+    margin-right: 310px;
+  }
+
+  .tema_2-5_reflektioner_p {
+    margin-inline: var(--margin-inline-desktop-tema-text);
+  }
+
+  .link_og_pil {
+    width: fit-content;
+  }
+
+  .link_og_pil a {
+    font-size: var(--font-size-desktop-link);
+    margin-left: var(--margin-left-desktop-link);
+  }
+
+  .link_og_pil p {
+    font-size: var(--font-size-desktop-link);
+  }
+
+  /**************** TEMA 3 ***************/
+
+  .grid_tema_3-5 {
+    margin-inline: var(--margin-inline-desktop-tema-text);
+  }
+
+  .proces_midt_cirkel {
+    margin-block: 0;
+    margin-bottom: 50px;
+  }
+
+  /**************** OM MIG ***************/
+
+  .om_mig {
+    width: fit-content;
+  }
+
+  .om_mig h1 {
+    font-size: var(--font-size-desktop-h1);
+    writing-mode: sideways-lr;
+  }
+
+  .om_mig p {
+    margin-inline: 0;
+  }
+
+  .portraet_trekant {
+    justify-self: center;
+    margin-left: 200px;
+  }
+
+  .portraet_trekant img:last-of-type {
+    margin-inline: 0;
+    margin-top: 0;
+  }
+
+  .portraet_trekant img:first-of-type {
+    width: 500px;
+  }
+
+  .grid_udvikling_kompetencer {
+    margin-inline: var(--margin-inline-desktop-tema-text);
+  }
+
+  .om_mig_circel_1 {
+    margin-right: 130px;
+  }
+
+  .bars {
+    margin-right: 30px;
+  }
+
+  .uddannelse_erfaring_p {
+    margin-inline: var(--margin-inline-desktop-tema-text);
+  }
+
+  .test2 {
+    margin-top: 40px;
+  }
+}
+
+/* 
+- ordne forsiden 
+
+- tjekke "om mig" om det er noget rod (arbejdet på træt)
+
+- finde ud af hvordan jeg gerne vil have starten af tema til at være med udgangspunkt i tema 2, 
+og når jeg er tilfreds lægge de samme class på de andre temaer så de får samme styling
+ */
