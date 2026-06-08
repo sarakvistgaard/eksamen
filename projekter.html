@@ -24,7 +24,7 @@
 
 <body>
 
-    <header>
+    <header class="header_projekter">
         <div>
             <a href="index.html">
                 <img src="logo_eksamen.svg" alt="logo" />
@@ -33,8 +33,9 @@
 
         <nav>
             <ul class="menu">
+                <li><a href="index.html">forside</a></li>
                 <li><a href="om_mig.html">om mig</a></li>
-                <li><a href="projekter.html">projekter</a></li>
+                <li><a class="active" href="projekter.html">projekter</a></li>
             </ul>
 
             <button class="burger" aria-label="menu">
@@ -49,39 +50,45 @@
 
     <main>
 
-        <h1 class="projekter">projekter</h1>
+        <div class="grid_projekter">
+            <h1 class="projekter">projekter</h1>
 
-        <div class="forside_temaer">
-            <a href="tema_2.html">
-                <div class="grid_1-1-1">
-                    <h2>2</h2>
-                    <img src="img/tema_2_loesning.webp" alt="tema 2">
-                </div>
-            </a>
+            <div class="forside_temaer">
+                <a href="tema_2.html">
+                    <div class="grid_1-1-1 projekter_img">
 
-            <a href="tema_3.html">
-                <div class="grid_1-1-1">
-                    <h2>3</h2>
-                    <img src="img/tema_3_loesning.webp" alt="tema 3">
-                </div>
-            </a>
+                        <p>tema 2</p>
+                        <img class="img_grid1-1-1" src="img/tema_2_loesning.webp" alt="tema 2">
+                    </div>
+                </a>
 
-            <a href="tema_4.html">
-                <div class="grid_1-1-1">
-                    <h2>4</h2>
-                    <img src="img/tema_4_loesning.webp" alt="tema 4">
-                </div>
-            </a>
+                <a href="tema_3.html">
+                    <div class="grid_1-1-1 projekter_img">
 
-            <a href="tema_5.html">
-                <div class="grid_1-1-1">
-                    <h2>5</h2>
-                    <img src="img/tema_5_loesning.webp" alt="tema 5">
-                </div>
-            </a>
+                        <p>tema 3</p>
+                        <img class="img_grid1-1-1" src="img/tema_3_loesning.webp" alt="tema 3">
+                    </div>
+                </a>
+
+                <a href="tema_4.html">
+                    <div class="grid_1-1-1 projekter_img">
+
+                        <p>tema 4</p>
+                        <img class="img_grid1-1-1" src="img/tema_4_loesning.webp" alt="tema 4">
+                    </div>
+                </a>
+
+                <a href="tema_5.html">
+                    <div class="grid_1-1-1 projekter_img">
+
+                        <p>tema 5</p>
+                        <img class="img_grid1-1-1" src="img/tema_5_loesning.webp" alt="tema 5">
+                    </div>
+                </a>
+
+            </div>
 
         </div>
-
 
 
     </main>
@@ -91,6 +98,7 @@
     <footer>
         <p>email: sawa1001@stud.ek.dk <br> tlf. 51802412</p>
     </footer>
+
 
 
     <script src="js/burger.js"></script>

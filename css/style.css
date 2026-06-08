@@ -6,7 +6,7 @@
   margin-block: var(--margin-block-h1);
 }
 
-.forside img {
+.forside_img {
   width: 300px;
   height: auto;
   justify-self: center;
@@ -28,7 +28,6 @@
 #forside_projekter {
   font-size: var(--font-size-mobil-h2);
   margin-block: var(--margin-block-mobil-h2);
-  margin-left: 110px;
 }
 
 /* img, h2 */
@@ -36,15 +35,34 @@
   margin-block: 50px;
 }
 
-.grid_1-1-1 img {
+.img_grid1-1-1 {
   width: 350px;
   height: auto;
-  opacity: 0.3;
-  border: 1px solid var(--color-h1-h2);
+  opacity: 0.4;
+  border: 2px solid var(--color-h1-h2);
 }
 
-.grid_1-1-1 h2 {
+.grid_1-1-1 p {
   font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.firkant_img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.firkant {
+  justify-self: end;
+  padding-top: 10px;
+}
+
+.firkant_tema {
+  margin: 0;
+}
+
+.circle_forside {
+  margin-top: 40px;
 }
 
 .geometrisk_form {
@@ -95,35 +113,35 @@
 
 /* 70% - 100% */
 .kompetence_bar_figma {
-  background: linear-gradient(to right, var(--color-rectangle) 70%, transparent 70%);
+  background: linear-gradient(to right, var(--color-link-line) 70%, transparent 70%);
   border: 1px solid var(--color-h1-h2);
   height: 15px;
   align-self: center;
 }
 
 .kompetence_bar_kodning {
-  background: linear-gradient(to right, var(--color-rectangle) 50%, transparent 50%);
+  background: linear-gradient(to right, var(--color-link-line) 50%, transparent 50%);
   border: 1px solid var(--color-h1-h2);
   height: 15px;
   align-self: center;
 }
 
 .kompetence_bar_illustrator {
-  background: linear-gradient(to right, var(--color-rectangle) 50%, transparent 50%);
+  background: linear-gradient(to right, var(--color-link-line) 50%, transparent 50%);
   border: 1px solid var(--color-h1-h2);
   height: 15px;
   align-self: center;
 }
 
 .kompetence_bar_premiere {
-  background: linear-gradient(to right, var(--color-rectangle) 40%, transparent 40%);
+  background: linear-gradient(to right, var(--color-link-line) 40%, transparent 40%);
   border: 1px solid var(--color-h1-h2);
   height: 15px;
   align-self: center;
 }
 
 .grid_1-3 {
-  margin-bottom: 40px;
+  margin-block: 40px 40px;
 }
 
 .grid_1-3 p {
@@ -136,7 +154,6 @@
 
 .uddannelse_erfaring p {
   margin-inline: var(--margin-inline-mobil);
-  margin-block: 20px;
 }
 
 /**************** PROJEKTER ***************/
@@ -155,7 +172,8 @@
 
 .tema_2-5 h2 {
   margin-bottom: 10px;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  margin-inline: var(--margin-inline-mobil);
 }
 
 .tema_2-5 p {
@@ -177,48 +195,52 @@
   margin-block: var(--margin-block-mobil-h2);
 }
 
-.tema_proces p,
-img {
+.grid_tema_2-5 p,
+/* .grid_tema_2-5 img, */
+/* .grid_tema_2-5_loesning img*/
+.grid_tema_2-5_loesning p {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: 30px;
+  max-width: 45ch;
 }
 
-.tema_loesning p,
-img {
-  margin-inline: var(--margin-inline-mobil);
-  margin-bottom: 30px;
+.grid_tema_2-5 .billede-tekst,
+.grid_tema_2-5_loesning .billede-tekst {
+  color: var(--color-img-text);
+  margin: 0;
+  font-size: 0.8rem;
 }
 
-.tema_2-5_reflektioner h2 {
-  margin-block: var(--margin-block-mobil-h2-reflektioner);
-}
-
-.tema_2-5_reflektioner p,
-img {
+.tema_2-5_reflektioner p {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: 30px;
 }
 
 .link {
   font-size: var(--font-size-mobil-link);
-  border-bottom: 1px solid var(--color-link-line);
+  border-bottom: 2px solid var(--color-link-line);
 }
 
 .link_og_pil p {
-  margin-top: var(--margin-top-link);
   font-size: var(--font-size-mobil-link);
-  border-bottom: 1px solid var(--color-link-line);
+  border-bottom: 2px solid var(--color-link-line);
   text-align: center;
 }
 
 .link_og_pil {
   margin-inline: var(--margin-inline-mobil);
+  margin-top: var(--margin-top-link);
+}
+
+.scale_link {
+  transform: scale(1.1);
 }
 
 /**************** TEMA 3 ***************/
 
 .proces_midt_cirkel {
   margin-block: 50px;
+  margin-right: 100px;
 }
 
 /**************** TEMA 5 ***************/
@@ -237,13 +259,6 @@ img {
 /**************** DESKTOP ***************/
 
 @media (min-width: 1000px) {
-  .video iframe {
-    width: 420px;
-  }
-
-  .video {
-    margin-bottom: 30px;
-  }
   /**************** FORSIDE ***************/
 
   .header_forside {
@@ -259,17 +274,23 @@ img {
   }
 
   .forside {
-    margin-inline: 30px;
+    margin-inline: 200px;
   }
 
   .forside h1 {
     font-size: 6rem;
     margin-top: 0;
+    justify-self: left;
   }
 
-  .forside img {
+  .forside_portfolio {
+    margin-left: 0;
+  }
+
+  .forside_img {
     width: 500px;
     height: auto;
+    /* margin-right: 195px; */
   }
 
   .forside h2 {
@@ -282,14 +303,22 @@ img {
     justify-self: left;
     margin-left: 235px;
     z-index: 1000;
+    margin-top: 0;
   }
 
   #forside_projekter {
     font-size: var(--font-size-desktop-h2);
+    margin: 0;
+    margin-left: 170px;
+    margin-block: 200px 60px;
   }
 
-  .forside_temaer {
-    margin-inline: 400px 50px;
+  .firkant_img {
+    margin: 0;
+  }
+
+  .firkant_forside {
+    margin-right: 10px;
   }
 
   .forside_temaer img {
@@ -298,6 +327,13 @@ img {
     height: 300px;
     width: 100%;
     justify-self: center;
+    filter: grayscale(100%);
+  }
+
+  .img_grid1-1-1:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1;
   }
 
   .forside_temaer a {
@@ -310,14 +346,24 @@ img {
 
   /**************** PROJEKTER ***************/
 
+  .grid_projekter {
+    margin-right: 60px;
+  }
+
   .projekter {
     font-size: var(--font-size-desktop-h1);
+    writing-mode: sideways-lr;
+    justify-self: start;
   }
 
   /**************** TEMA 2 ***************/
 
   .tema_2-5 {
     width: fit-content;
+  }
+
+  .tema_2-5 h2 {
+    margin-inline: 0;
   }
 
   .tema_2-5 h1 {
@@ -332,6 +378,7 @@ img {
   .trekant_tema {
     margin-left: 290px;
     margin-top: 20px;
+    justify-self: start;
   }
 
   .grid_tema_2-5,
@@ -342,6 +389,10 @@ img {
 
   .tema_subheader {
     margin-block: var(--margin-block-desktop-h2);
+  }
+
+  .forside_temaer {
+    margin-inline: 400px 50px;
   }
 
   .grid_tema_2-5 img {
@@ -374,7 +425,7 @@ img {
     font-size: var(--font-size-desktop-link);
   }
 
-  /**************** TEMA 3 ***************/
+  /**************** TEMA 3-5 ***************/
 
   .grid_tema_3-5 {
     margin-inline: var(--margin-inline-desktop-tema-text);
@@ -383,6 +434,16 @@ img {
   .proces_midt_cirkel {
     margin-block: 0;
     margin-bottom: 50px;
+  }
+
+  /**************** TEMA 5 ***************/
+
+  .video iframe {
+    width: 420px;
+  }
+
+  .video {
+    margin-bottom: 30px;
   }
 
   /**************** OM MIG ***************/
@@ -401,17 +462,18 @@ img {
   }
 
   .portraet_trekant {
-    justify-self: center;
     margin-left: 200px;
   }
 
   .portraet_trekant img:last-of-type {
     margin-inline: 0;
     margin-top: 0;
+    margin-left: 200px;
   }
 
   .portraet_trekant img:first-of-type {
     width: 500px;
+    margin: 0;
   }
 
   .grid_udvikling_kompetencer {
@@ -419,7 +481,7 @@ img {
   }
 
   .om_mig_circel_1 {
-    margin-right: 130px;
+    margin-right: 300px;
   }
 
   .bars {
@@ -430,16 +492,190 @@ img {
     margin-inline: var(--margin-inline-desktop-tema-text);
   }
 
-  .test2 {
+  /* .uddannelse_erfaring_p > div:last-child{
     margin-top: 40px;
+  } */
+
+  .test {
+    margin-top: 40px;
+  }
+
+  /**************** SCROLL ANIMATIONER ***************/
+
+  /**** PROGRESS BAR I TOP *****/
+
+  html::before {
+    content: "";
+    inset: 0;
+    background-color: var(--color-rectangle);
+    block-size: 4px;
+    animation: site-progress linear both;
+    animation-timeline: scroll();
+    position: fixed;
+    transform-origin: 0 0;
+    z-index: 1010;
+  }
+
+  @keyframes site-progress {
+    from {
+      scale: 0 1;
+    }
+  }
+
+  /***** FORSIDEN *****/
+  .forside_trekant {
+    animation: drop_down linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 400px;
+  }
+
+  @keyframes drop_down {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(310px);
+    }
+  }
+
+  /***** OM MIG *****/
+
+  .om_mig_trekant {
+    animation: drop_down_om_mig linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 1000px;
+  }
+
+  @keyframes drop_down_om_mig {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(920px);
+    }
+  }
+
+  /***** GENNEMGÅENDE PÅ ALLE TEMAER *****/
+
+  /* trekant */
+  .trekant_tema {
+    animation: drop_down_tema linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 400px;
+  }
+
+  @keyframes drop_down_tema {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(260px);
+    }
+  }
+
+  /* proces - løsning */
+  .tema_3-5_loesning {
+    animation: circle_til_loesning_3-5 linear both;
+    animation-timeline: view();
+    animation-range-start: 15%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes circle_til_loesning_3-5 {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-1000px, 260px);
+    }
+  }
+
+  /* løsning - reflektioner */
+  .tema_2-5_circle_loesning {
+    animation: circle_til_reflektioner linear both;
+    animation-timeline: view();
+    animation-range-start: 20%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes circle_til_reflektioner {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-780px, 260px);
+    }
+  }
+
+  /***** TEMA 2 *****/
+
+  /* proces - løsning */
+  .tema_2_circle_proces {
+    animation: circle_til_loesning linear both;
+    animation-timeline: view();
+    animation-range-start: 15%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes circle_til_loesning {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-1000px, 260px);
+    }
+  }
+
+  /***** TEMA 3-5 *****/
+  .tema_3-4_proces {
+    animation: circle_midt_proces linear both;
+    animation-timeline: view();
+    animation-range-start: 15%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes circle_midt_proces {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1000px);
+    }
+  }
+
+  /***** TEMA 5 *****/
+
+  /* midt proces */
+  .tema_5_proces {
+    animation: circle_midt_proces_5 linear both;
+    animation-timeline: view();
+    animation-range-start: 20%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes circle_midt_proces_5 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1000px);
+    }
   }
 }
 
 /* 
-- ordne forsiden 
 
-- tjekke "om mig" om det er noget rod (arbejdet på træt)
+- css scroll animationer på figurer - tjek
+- progress bar i toppen af siderne - tjek
+- active class på - tjek
 
-- finde ud af hvordan jeg gerne vil have starten af tema til at være med udgangspunkt i tema 2, 
-og når jeg er tilfreds lægge de samme class på de andre temaer så de får samme styling
+
+- javascript (overvej om et er fint alle billeder bliver farvet, og så tilføj en scale til det enkelte man hover over i css)
+  kan også tilføje en mouseover funktion til link i stedet for, og så lave farveændringen på billederne med css - tjek
+
+- ordne billeder projekt og index - tjek
+- implementering af den røde - måske sæt øverst i kolonne 3 i proces og løsning og reflektion? - tjek
+
+- bg farve - tjek
+- favikon
  */

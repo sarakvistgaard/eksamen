@@ -12,7 +12,7 @@
   grid-row: 1/-1;
 }
 
-.grid_1-1-1 h2 {
+.grid_1-1-1 p {
   grid-column: 2;
   grid-row: 2;
   z-index: 1;
@@ -24,7 +24,7 @@
 
 .grid_1-3 {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .grid_1-3 div:first-child {
@@ -49,6 +49,7 @@
 
 .grey_line {
   grid-column: 2;
+  align-self: center;
 }
 
 .link_og_pil {
@@ -78,13 +79,19 @@
   .forside h1 {
     grid-column: 1/3;
     grid-row: 1/2;
-    z-index: 1000;
+    z-index: 10;
   }
 
-  .forside img {
+  .forside_img {
     grid-column: 2/4;
     grid-row: 1/3;
-    justify-self: left;
+    justify-self: right;
+  }
+
+  .forside_trekant {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 40px;
   }
 
   .forside h2,
@@ -97,7 +104,7 @@
   .forside_temaer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
   .forside_temaer div:nth-of-type(1) {
@@ -120,6 +127,26 @@
     grid-row: 2;
   }
 
+  /**************** PROJEKTER ***************/
+
+  .grid_projekter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px 2fr;
+  }
+
+  .projekter {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: start;
+  }
+
+  .grid_projekter > div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
+  }
+
   /**************** TEMA 2 ***************/
 
   .header_tema2-5 {
@@ -136,7 +163,6 @@
     grid-column: 1/2;
     grid-row: 1/3;
     align-self: start;
-    font-size: 5rem;
   }
 
   .tema_2-5 div {
@@ -224,7 +250,6 @@
   .portraet_trekant {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    justify-self: end;
   }
 
   .portraet_trekant img:last-of-type {
@@ -243,7 +268,6 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr auto;
-    gap: 50px;
   }
 
   .grid_udvikling_kompetencer div:first-child {
@@ -254,7 +278,7 @@
   .bars {
     grid-column: 1/3;
     grid-row: 2/3;
-    justify-self: end;
+    justify-self: center;
   }
 
   /* .test {

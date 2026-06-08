@@ -6,8 +6,8 @@
   --font-p: "Montserrat", sans-serif;
 
   --font-size-desktop-h1: 5rem;
-  --font-size-desktop-h2: 3rem;
-  --font-size-desktop-link: 2.5rem;
+  --font-size-desktop-h2: 2.5rem;
+  --font-size-desktop-link: 2rem;
 
   --font-size-mobil-h1: 3rem;
   --font-size-mobil-h2: 2rem;
@@ -26,8 +26,9 @@
 
   /* FARVER */
   --color-header-footer: #f2f2f2;
-  --color-bg: #fafafa;
+  --color-bg: #fcfcfc;
   --color-line: #b7b7b6;
+  --color-img-text: #979796;
 
   --color-h1-h2: #1a1a1a;
 
@@ -49,10 +50,10 @@
   --margin-left-desktop-formaal: 155px;
 
   --margin-block-desktop-h2: 200px 10px;
-  --margin-block-mobil-h2: 60px 15px;
+  --margin-block-mobil-h2: 60px 0px;
   --margin-block-mobil-h2-reflektioner: 100px 15px;
 
-  --margin-bottom-desktop-header: 140px;
+  --margin-bottom-desktop-header: 70px;
   --margin-bottom-mobil-header: 40px;
   --margin-top-footer: 300px;
 
@@ -117,6 +118,12 @@ select,
 
 /**************** GLOBAL STYLING ***************/
 
+/* BAGGRUND */
+
+body {
+  background-color: var(--color-bg);
+}
+
 /* FONTS */
 
 h1 {
@@ -148,7 +155,6 @@ a {
   font-weight: var(--font-weight-h2-p);
   text-decoration: none;
   color: var(--color-h1-h2);
-  margin-top: var(--margin-top-link);
 }
 
 /* HEADER */
@@ -171,7 +177,7 @@ header {
 }
 
 header img {
-  width: 70px;
+  width: 60px;
   height: auto;
   margin-left: 30px;
 }
@@ -192,8 +198,11 @@ nav {
 }
 
 .menu a:hover {
-  color: var(--color-rectangle);
-  padding: 5px;
+  color: var(--color-link-line);
+}
+
+.active {
+  color: var(--color-link-line);
 }
 
 .burger {
