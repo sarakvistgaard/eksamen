@@ -131,8 +131,8 @@
 
   .grid_projekter {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 150px 2fr;
+    grid-template-columns: auto auto 2fr;
+    grid-template-rows: 150px 1fr;
   }
 
   .projekter {
@@ -141,10 +141,29 @@
     align-self: start;
   }
 
-  .grid_projekter > div {
+  .projekter_forklaring {
     grid-column: 2/3;
     grid-row: 2/3;
+    align-self: start;
+    max-width: 25ch;
     margin: 0;
+    margin-top: 140px;
+    margin-right: 60px;
+  }
+
+  .trekant_projekter {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+    margin-top: 40px;
+    transform: rotate(-90deg);
+  }
+
+  .grid_projekter > div:last-child {
+    grid-column: 3/4;
+    grid-row: 3/2;
+    margin: 0;
+    margin-top: 140px;
   }
 
   /**************** TEMA 2 ***************/

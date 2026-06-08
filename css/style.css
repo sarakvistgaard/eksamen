@@ -156,10 +156,18 @@
   margin-inline: var(--margin-inline-mobil);
 }
 
+.forklarende_erfaring {
+  margin-top: 20px;
+}
+
 /**************** PROJEKTER ***************/
 
 .projekter {
   font-size: var(--font-size-mobil-h1);
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.projekter_forklaring {
   margin-inline: var(--margin-inline-mobil);
 }
 
@@ -204,11 +212,22 @@
   max-width: 45ch;
 }
 
+.grid_tema_2-5 img,
+.grid_tema_2-5_loesning img {
+  margin-inline: var(--margin-inline-mobil);
+  max-width: 45ch;
+}
+
 .grid_tema_2-5 .billede-tekst,
 .grid_tema_2-5_loesning .billede-tekst {
   color: var(--color-img-text);
   margin: 0;
   font-size: 0.8rem;
+  margin-inline: var(--margin-inline-mobil);
+}
+
+.video .billede-tekst_video {
+  margin: 0;
 }
 
 .tema_2-5_reflektioner p {
@@ -302,7 +321,7 @@
     width: 70px;
     justify-self: left;
     margin-left: 235px;
-    z-index: 1000;
+    /* z-index: 1000; */
     margin-top: 0;
   }
 
@@ -387,6 +406,11 @@
     margin-inline: var(--margin-inline-desktop-tema-text);
   }
 
+  .grid_tema_2-5 .billede-tekst,
+  .grid_tema_2-5_loesning .billede-tekst {
+    margin: 0;
+  }
+
   .tema_subheader {
     margin-block: var(--margin-block-desktop-h2);
   }
@@ -450,6 +474,8 @@
 
   .om_mig {
     width: fit-content;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .om_mig h1 {
@@ -495,10 +521,6 @@
   /* .uddannelse_erfaring_p > div:last-child{
     margin-top: 40px;
   } */
-
-  .test {
-    margin-top: 40px;
-  }
 
   /**************** SCROLL ANIMATIONER ***************/
 
@@ -665,17 +687,9 @@
 
 /* 
 
-- css scroll animationer på figurer - tjek
-- progress bar i toppen af siderne - tjek
-- active class på - tjek
+- valider siderne 
+- tjek koden igennem om der er nogle ting der skal fjernes (fx udkommenteringer)
+- lav lighthouse test og tag billeder (bruges til præsentation)
+- sæt <meta no=robots ind (se emnesite)
 
-
-- javascript (overvej om et er fint alle billeder bliver farvet, og så tilføj en scale til det enkelte man hover over i css)
-  kan også tilføje en mouseover funktion til link i stedet for, og så lave farveændringen på billederne med css - tjek
-
-- ordne billeder projekt og index - tjek
-- implementering af den røde - måske sæt øverst i kolonne 3 i proces og løsning og reflektion? - tjek
-
-- bg farve - tjek
-- favikon
  */
