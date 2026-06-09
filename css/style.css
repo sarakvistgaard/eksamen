@@ -323,8 +323,6 @@
   .trekant {
     width: 70px;
     justify-self: left;
-    margin-left: 235px;
-    margin-top: 0;
   }
 
   #forside_projekter {
@@ -576,7 +574,7 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(310px);
+      transform: translateY(320px);
     }
   }
 
