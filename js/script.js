@@ -14,5 +14,3 @@ document.querySelector(".link_og_pil").addEventListener("mouseout", no_scale_lin
 function no_scale_link() {
   document.querySelector(".link_og_pil").classList.remove("scale_link");
 }
-
-/**************** PROJEKTER ***************/

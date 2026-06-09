@@ -180,7 +180,6 @@
 
 .tema_2-5 h2 {
   margin-bottom: 10px;
-  /* font-size: 2rem; */
   margin-inline: var(--margin-inline-mobil);
 }
 
@@ -192,7 +191,6 @@
   background: var(--color-line);
   height: 1px;
   width: 100%;
-  align-self: center;
   margin-block: var(--margin-block-mobil-h2);
 }
 
@@ -204,12 +202,10 @@
 }
 
 .grid_tema_2-5 p,
-/* .grid_tema_2-5 img, */
-/* .grid_tema_2-5_loesning img*/
 .grid_tema_2-5_loesning p {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: 30px;
-  max-width: 45ch;
+  max-width: 40ch;
 }
 
 .grid_tema_2-5 img,
@@ -265,6 +261,7 @@
 /**************** TEMA 5 ***************/
 
 .video {
+  max-width: 45ch;
   margin-inline: var(--margin-inline-mobil);
 }
 
@@ -273,6 +270,7 @@
   width: 100%;
   aspect-ratio: 16/9;
   display: block;
+  border: none;
 }
 
 /**************** DESKTOP ***************/
@@ -309,7 +307,6 @@
   .forside_img {
     width: 500px;
     height: auto;
-    /* margin-right: 195px; */
   }
 
   .forside h2 {
@@ -317,11 +314,16 @@
     margin-top: 0;
   }
 
+  .forside_trekant {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+
   .trekant {
     width: 70px;
     justify-self: left;
     margin-left: 235px;
-    /* z-index: 1000; */
     margin-top: 0;
   }
 
@@ -375,7 +377,28 @@
     justify-self: start;
   }
 
+  .projekter_forklaring {
+    max-width: 25ch;
+    margin: 0;
+    margin-top: 140px;
+    margin-right: 60px;
+  }
+
+  .trekant_projekter {
+    margin-top: 40px;
+    transform: rotate(-90deg);
+  }
+
+  .grid_projekter > div:last-child {
+    margin: 0;
+    margin-top: 140px;
+  }
+
   /**************** TEMA 2 ***************/
+
+  .header_tema2-5 {
+    margin-bottom: 70px;
+  }
 
   .tema_2-5 {
     width: fit-content;
@@ -447,6 +470,7 @@
 
   .link_og_pil p {
     font-size: var(--font-size-desktop-link);
+    padding-inline: 25px;
   }
 
   /**************** TEMA 3-5 ***************/
@@ -517,10 +541,6 @@
   .uddannelse_erfaring_p {
     margin-inline: var(--margin-inline-desktop-tema-text);
   }
-
-  /* .uddannelse_erfaring_p > div:last-child{
-    margin-top: 40px;
-  } */
 
   /**************** SCROLL ANIMATIONER ***************/
 
@@ -684,12 +704,3 @@
     }
   }
 }
-
-/* 
-
-- valider siderne 
-- tjek koden igennem om der er nogle ting der skal fjernes (fx udkommenteringer)
-- lav lighthouse test og tag billeder (bruges til præsentation)
-- sæt <meta no=robots ind (se emnesite)
-
- */
